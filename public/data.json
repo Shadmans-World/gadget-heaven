@@ -1,0 +1,171 @@
+[
+    {
+        "product_id": "L004",
+        "product_title": "Lenovo ThinkPad X1 Carbon",
+        "product_image": "https://i.ibb.co.com/q1cqsv1/1.jpg",
+        "category": "Laptop",
+        "price": 1499.99,
+        "description": "Ultralight business laptop with a durable carbon fiber chassis.",
+        "specifications": [
+            "Intel Core i7-1185G7",
+            "16GB RAM",
+            "1TB SSD",
+            "14-inch FHD Display",
+            "Windows 11 Pro"
+        ],
+        "availability": true,
+        "rating": 4.7
+    },
+    {
+        "product_id": "S001",
+        "product_title": "Apple Watch Series 7",
+        "product_image": "https://i.ibb.co.com/s3gsC3L/2.jpg",
+        "category": "Smart Watch",
+        "price": 399.99,
+        "description": "Apple Watch with larger display, ECG, and blood oxygen sensor.",
+        "specifications": [
+            "Always-On Retina display",
+            "ECG and Blood Oxygen Apps",
+            "50m Water Resistance",
+            "watchOS 8"
+        ],
+        "availability": true,
+        "rating": 4.8
+    },
+    {
+        "product_id": "L003",
+        "product_title": "HP Spectre x360",
+        "product_image": "https://i.ibb.co.com/rxYt7VL/3.jpg",
+        "category": "Laptop",
+        "price": 1199.99,
+        "description": "2-in-1 convertible laptop with a 4K display and Intel i7 processor.",
+        "specifications": [
+            "Intel Core i7-1165G7",
+            "16GB RAM",
+            "512GB SSD",
+            "13.3-inch 4K UHD Touch Display",
+            "Windows 11"
+        ],
+        "availability": true,
+        "rating": 4.6
+    },
+    {
+        "product_id": "M001",
+        "product_title": "Apple iPhone 13",
+        "product_image": "https://i.ibb.co.com/hX1V8JS/4.jpg",
+        "category": "Mobile Phone",
+        "price": 899.99,
+        "description": "Apple iPhone 13 with A15 Bionic chip and advanced dual-camera system.",
+        "specifications": [
+            "A15 Bionic chip",
+            "128GB Storage",
+            "6.1-inch Super Retina XDR Display",
+            "Dual 12MP Camera",
+            "iOS 15"
+        ],
+        "availability": true,
+        "rating": 4.7
+    },
+    {
+        "product_id": "L005",
+        "product_title": "Asus ROG Zephyrus G14",
+        "product_image": "https://i.ibb.co.com/2hXSxgc/5.jpg",
+        "category": "Laptop",
+        "price": 1399.99,
+        "description": "High-performance gaming laptop with AMD Ryzen 9 and RTX 3060.",
+        "specifications": [
+            "AMD Ryzen 9 5900HS",
+            "16GB RAM",
+            "1TB SSD",
+            "14-inch FHD Display",
+            "NVIDIA GeForce RTX 3060"
+        ],
+        "availability": true,
+        "rating": 4.8
+    },
+    {
+        "product_id": "S002",
+        "product_title": "Samsung Galaxy Watch 4",
+        "product_image": "https://i.ibb.co.com/D1KZV3V/6.jpg",
+        "category": "Smart Watch",
+        "price": 249.99,
+        "description": "Samsung Galaxy Watch 4 with health tracking and Wear OS.",
+        "specifications": [
+            "Wear OS",
+            "Body Composition Analysis",
+            "Heart Rate and ECG Monitoring",
+            "40mm Case"
+        ],
+        "availability": true,
+        "rating": 4.6
+    },
+    {
+        "product_id": "L001",
+        "product_title": "Dell XPS 13",
+        "product_image": "https://i.ibb.co.com/HYWVHVP/7.jpg",
+        "category": "Laptop",
+        "price": 1299.99,
+        "description": "13-inch laptop with an InfinityEdge display and Intel i7 processor.",
+        "specifications": [
+            "Intel Core i7-1165G7",
+            "16GB RAM",
+            "512GB SSD",
+            "13.3-inch FHD Display",
+            "Windows 11"
+        ],
+        "availability": true,
+        "rating": 4.5
+    },
+    {
+        "product_id": "L002",
+        "product_title": "Apple MacBook Air M2",
+        "product_image": "https://i.ibb.co.com/XV9fLtS/8.jpg",
+        "category": "Laptop",
+        "price": 1399.99,
+        "description": "13-inch Apple MacBook Air with the M2 chip and Retina display.",
+        "specifications": [
+            "Apple M2 chip",
+            "8GB RAM",
+            "256GB SSD",
+            "13.6-inch Retina Display",
+            "macOS Ventura"
+        ],
+        "availability": true,
+        "rating": 4.8
+    },
+    {
+        "product_id": "M002",
+        "product_title": "Samsung Galaxy S21",
+        "product_image": "https://i.ibb.co.com/ypScxcb/9.jpg",
+        "category": "Mobile Phone",
+        "price": 799.99,
+        "description": "Samsung Galaxy S21 with Exynos 2100 and triple rear cameras.",
+        "specifications": [
+            "Exynos 2100",
+            "128GB Storage",
+            "6.2-inch Dynamic AMOLED 2X",
+            "Triple 12MP+64MP+12MP Cameras",
+            "Android 11"
+        ],
+        "availability": true,
+        "rating": 4.5
+    },
+    {
+        "product_id": "L006",
+        "product_title": "Acer Swift 3",
+        "product_image": "https://i.ibb.co.com/fqyPH0k/10.jpg",
+        "category": "Laptop",
+        "price": 749.99,
+        "description": "Slim and lightweight laptop with AMD Ryzen 7 processor.",
+        "specifications": [
+            "AMD Ryzen 7 5700U",
+            "8GB RAM",
+            "512GB SSD",
+            "14-inch FHD Display",
+            "Windows 10"
+        ],
+        "availability": false,
+        "rating": 4.2
+    }
+]
+
