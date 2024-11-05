@@ -5,10 +5,10 @@ import { MdFavoriteBorder } from "react-icons/md";
 const Navbar = () => {
 
     const links = <>
-    <li className='mr-3'><NavLink>Home</NavLink></li>
-    <li className='mr-3'><NavLink>Statistics</NavLink></li>
-    <li className='mr-3'><NavLink>Dashboard</NavLink></li>
-    <li className='mr-3'><NavLink>About</NavLink></li>
+    <li className='mr-3'><NavLink to={'/'}>Home</NavLink></li>
+    <li className='mr-3'><NavLink to={'/statistics'}>Statistics</NavLink></li>
+    <li className='mr-3'><NavLink to={'/dashboard'}>Dashboard</NavLink></li>
+    <li className='mr-3'><NavLink to={'/about'}>About</NavLink></li>
     
     </>
 

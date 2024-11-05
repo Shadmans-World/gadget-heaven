@@ -9,8 +9,9 @@ import {
 import Home from './components/Home/Home';
 import ErrorPage from './components/ErrorPage/ErrorPage';
 import Root from './components/Root/Root';
-import AllData from './components/AllData/AllData';
+
 import DetailsPage from './components/DetailsPage/DetailsPage';
+import Dashboard from './components/Dashboard/Dashboard';
 
 const router = createBrowserRouter([
   {
@@ -25,6 +26,10 @@ const router = createBrowserRouter([
       {
         path: '/details/:productId',
         element:<DetailsPage></DetailsPage>
+      },
+      {
+        path:'/dashboard',
+        element:<Dashboard></Dashboard>
       }
     ]
   }
