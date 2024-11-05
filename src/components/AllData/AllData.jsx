@@ -1,28 +1,23 @@
-
-import React, { useEffect, useState } from "react";
+import React, { useContext, useState } from "react";
+import { GadgetsContext } from "../../context/GadgetsContext";
 import DataCategories from "../DataCategories/DataCategories";
 import Products from "../Products/Products";
 
 const AllData = () => {
-  const [items, setItems] = useState([]);
+  const { items } = useContext(GadgetsContext);
 
-  useEffect(() => {
-    fetch("/data.json")
-      .then((res) => res.json())
-      .then((data) => setItems(data));
-  }, []);
-
+  // Ensure "Accessories" is always included in the uniqueCategories array
   const uniqueCategories = [
-    ...new Set(items.map((product) => product.category)),
+    "Accessories", 
+    ...new Set(items.map((product) => product.category))
   ];
 
-  //   filter categories
   const [selectedCategory, setSelectedCategory] = useState("All");
+
   const handleCategoryChange = (category) => {
     setSelectedCategory(category);
   };
 
-  // Filtered items based on selected category
   const filteredItems = items.filter((product) =>
     selectedCategory === "All" ? true : product.category === selectedCategory
   );
@@ -33,6 +28,7 @@ const AllData = () => {
         Explore Cutting-Edge Gadgets
       </h3>
       <div className="flex gap-3">
+        {/* Sidebar with Category Buttons */}
         <div className="w-[20%] flex flex-col gap-y-4 bg-white justify-center items-center p-5 h-max rounded-xl">
           <button
             onClick={() => handleCategoryChange("All")}
@@ -47,15 +43,9 @@ const AllData = () => {
               productCategory={category}
             />
           ))}
-          <button
-            onClick={() => handleCategoryChange("Accessories")}
-            className="w-[150px] p-3 border-2 rounded-3xl"
-          >
-            Accessories
-          </button>
         </div>
 
-
+        {/* Product Display Section */}
         <div className="w-[80%] grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-3">
           {filteredItems.length > 0 ? (
             filteredItems.slice(0, 9).map((product) => (
