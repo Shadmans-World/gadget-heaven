@@ -11,6 +11,7 @@ export const GadgetsProvider = ({ children }) => {
       .then((data) => setItems(data));
   }, []);
   const [cart, setCart] = useState([]); // Initialize cart as an empty array
+  const [wishlist, setWishlist] = useState([]);
 
     const addToCart = (product) => {
         setCart((prevCart) => [...prevCart, product]); // Adds the selected product to the cart
@@ -20,9 +21,19 @@ export const GadgetsProvider = ({ children }) => {
       setCart((prevCart) => prevCart.filter(item => item.product_id !== productId));
     };
 
+    const removeFromWishlist=(productId)=>{
+      setWishlist((prevWishlist) => prevWishlist.filter(item => item.product_id !== productId));
+    }
+    const addToWishlist = (product) => {
+      setWishlist((prevWishlist) => [...prevWishlist, product]);
+    };
+
+    const clearCart = () => {
+      setCart([]); // Sets cart to an empty array
+    };
 
   return (
-    <GadgetsContext.Provider value={{ items, cart, addToCart , removeFromCart}}>
+    <GadgetsContext.Provider value={{ items, cart, wishlist, addToCart , removeFromCart, addToWishlist,removeFromWishlist, clearCart}}>
       {children}
     </GadgetsContext.Provider>
   );
