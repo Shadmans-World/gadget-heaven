@@ -3,8 +3,8 @@ import React from "react";
 const Products = ({ product }) => {
   return (
     <div className="card bg-base-100 shadow-xl">
-      <figure className="p-5 h-[300px] rounded-3xl">
-        <img className="border-2 h-full w-full object-cover rounded-3xl"
+      <figure className="p-5 h-[300px]  rounded-3xl">
+        <img className="border-2 h-full w-[full]  rounded-3xl"
           src={product.product_image}
           alt="Shoes"
         />
