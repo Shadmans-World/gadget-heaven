@@ -44,9 +44,9 @@ const AllData = () => {
         Explore Cutting-Edge Gadgets
       </h3>
 
-      <div className="flex gap-3">
+      <div className="flex flex-wrap md:flex-nowrap gap-3">
         {/* Sidebar with Category Buttons */}
-        <div className="w-[20%] flex flex-col gap-y-4 bg-white justify-center items-center p-5 h-max rounded-xl">
+        <div className="w-full lg:w-[20%] flex flex-wrap md:flex-col gap-y-4 bg-white justify-center items-center p-5 h-max rounded-xl">
           <button
             onClick={() => handleCategoryChange("All")}
             className="w-[150px] p-3 border-2 rounded-3xl"
@@ -63,7 +63,7 @@ const AllData = () => {
         </div>
 
         {/* Product Display Section */}
-        <div className="w-[80%] grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-3">
+        <div className="w-full lg:w-[80%] grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-3">
           {filteredItems.length > 0 ? (
             filteredItems.slice(0, 9).map((product) => (
               <Products key={product.product_id} product={product} />

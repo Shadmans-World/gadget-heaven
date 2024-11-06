@@ -46,7 +46,7 @@ const Navbar = () => {
                 </div>
                
                 
-                <a className="btn btn-ghost flex items-center text-xl"><SiTemporal className='text-2xl'/>Gadget Heaven</a>
+                <a className="btn btn-ghost md:flex items-center text-xl hidden"><SiTemporal className='text-2xl'/>Gadget Heaven</a>
                 
                 
             </div>

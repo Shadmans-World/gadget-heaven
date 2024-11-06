@@ -35,11 +35,11 @@ const CartPage = () => {
   return (
     <div>
       <Helmet><link rel="shortcut icon" href="/dashboard.png" type="image/x-icon" /></Helmet>
-      <div className="flex justify-between items-center px-5 mt-5">
+      <div className="flex flex-wrap justify-between items-center px-5 mt-5">
         <div>
           <h5 className="text-2xl font-bold">Cart</h5>
         </div>
-        <div className="flex gap-3 items-center">
+        <div className="flex gap-3 flex-wrap items-center">
           <h5 className="text-2xl font-bold">Total Cost: ${totalCost}</h5>
           <button
             onClick={handleSortDescending}
@@ -67,9 +67,9 @@ const CartPage = () => {
           sortedCart.map((product, index) => (
             <div
               key={index}
-              className="flex justify-between items-center border-2 p-5 rounded-xl"
+              className="flex flex-wrap md:justify-between items-center border-2 p-5 rounded-xl"
             >
-              <div className="flex gap-3 ">
+              <div className="flex flex-col md:flex-row gap-3 ">
                 <img
                   className="h-[150px] w-[200px]"
                   src={product.product_image}
