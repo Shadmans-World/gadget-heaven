@@ -6,17 +6,19 @@ import {
   createBrowserRouter,
   RouterProvider,
 } from "react-router-dom";
+
+// Importing Components
 import Home from './components/Home/Home';
 import ErrorPage from './components/ErrorPage/ErrorPage';
 import Root from './components/Root/Root';
-
 import DetailsPage from './components/DetailsPage/DetailsPage';
 import Dashboard from './components/Dashboard/Dashboard';
 import Statistics from './components/Statistics/Statistics';
 import CartPage from './components/CartPage/CartPage';
 import WishlistPage from './components/WishlistPage/WishlistPage';
-import ContactUs from './components/ContactUs.jsx/ContactUs';
 
+
+// Configuring routes, including nested routes for categories within Home
 const router = createBrowserRouter([
   {
     path: '/',
@@ -29,32 +31,34 @@ const router = createBrowserRouter([
       },
       {
         path: '/details/:productId',
-        element:<DetailsPage></DetailsPage>
+        element: <DetailsPage />,
       },
       {
-        path:'/dashboard',
-        element:<Dashboard></Dashboard>
+        path: '/dashboard',
+        element: <Dashboard />,
       },
       {
-        path:'/statistics',
-        element:<Statistics></Statistics>
+        path: '/statistics',
+        element: <Statistics />,
       },
       {
-        path:'/cart',
-        element:<CartPage></CartPage>
+        path: '/cart',
+        element: <CartPage />,
       },
       {
-        path:'/wishlist',
-        element: <WishlistPage></WishlistPage>
+        path: '/wishlist',
+        element: <WishlistPage />,
       },
+      
       {
-        path:'/contactus',
-        element:<ContactUs></ContactUs>
+        path: '/allData/:category?',
+        element: <Home />, // Home component includes Banner and AllData
       }
-    ]
-  }
+    ],
+  },
 ]);
 
+// Rendering the app with GadgetsProvider context and RouterProvider
 createRoot(document.getElementById('root')).render(
   <StrictMode>
     <GadgetsProvider>
