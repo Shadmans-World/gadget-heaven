@@ -3,7 +3,7 @@ import { Link, NavLink, useLocation } from 'react-router-dom';
 import { MdOutlineShoppingCart } from "react-icons/md";
 import { MdFavoriteBorder } from "react-icons/md";
 import { GadgetsContext } from '../../context/GadgetsContext'; // Import your context
-
+import { SiTemporal } from "react-icons/si";
 const Navbar = () => {
     const { cart, wishlist } = useContext(GadgetsContext); // Access cart and wishlist from context
 
@@ -12,7 +12,7 @@ const Navbar = () => {
             <li className='mr-3'><NavLink to={'/'}>Home</NavLink></li>
             <li className='mr-3'><NavLink to={'/statistics'}>Statistics</NavLink></li>
             <li className='mr-3'><NavLink to={'/dashboard'}>Dashboard</NavLink></li>
-            <li className='mr-3'><NavLink to={'/contactus'}>Contact Us</NavLink></li>
+            <li className='mr-3'><NavLink to={'/support'}>Support</NavLink></li>
         </>
     );
 
@@ -44,7 +44,11 @@ const Navbar = () => {
                         {links}
                     </ul>
                 </div>
-                <a className="btn btn-ghost text-xl">Gadget Heaven</a>
+               
+                
+                <a className="btn btn-ghost flex items-center text-xl"><SiTemporal className='text-2xl'/>Gadget Heaven</a>
+                
+                
             </div>
             <div className="navbar-center hidden lg:flex">
                 <ul className="menu menu-horizontal px-1">

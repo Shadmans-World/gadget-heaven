@@ -28,11 +28,18 @@ const Statistics = () => {
         <Helmet>
         <title>Statistics - Gadget Heaven</title>
         <meta name="description" content="Welcome to the best gadgets store with the latest products!" />
+        <link rel="icon" href="/analysis.png" type="image/png"></link>
       </Helmet>
-      <div className="h-[500px] w-full mb-16 mt-5">
-        <h2 className="text-2xl font-bold text-center mb-4">
+      <div className="bg-customPurple h-max rounded-xl pb-10 pt-5 text-white">
+      <h3 className="text-[32px] font-bold text-center mb-4">
           Product-Price Statistics
-        </h2>
+        </h3>
+        <p className="text-center   px-5">
+  Explore insightful statistics on product prices, helping you make <br /> informed decisions on your next gadget purchase.
+</p>
+      </div>
+      <div className="h-[500px] w-full mb-16 mt-5">
+        
         <ResponsiveContainer>
           <LineChart data={chartData}>
             <CartesianGrid strokeDasharray="3 3" />

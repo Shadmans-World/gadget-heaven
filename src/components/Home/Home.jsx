@@ -9,6 +9,7 @@ const Home = () => {
       <Helmet>
         <title>Home - Gadget HEaven</title>
         <meta name="description" content="Welcome to the best gadgets store with the latest products!" />
+        <link rel="icon" href="/gadgets.png" type="image/png"></link>
       </Helmet>
       <Banner />
       <AllData />

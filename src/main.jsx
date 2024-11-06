@@ -15,6 +15,7 @@ import Dashboard from './components/Dashboard/Dashboard';
 import Statistics from './components/Statistics/Statistics';
 import CartPage from './components/CartPage/CartPage';
 import WishlistPage from './components/WishlistPage/WishlistPage';
+import SupportPage from './components/SupportPage/SupportPage';
 
 // Configuring routes
 const router = createBrowserRouter([
@@ -49,8 +50,12 @@ const router = createBrowserRouter([
       },
       {
         path: '/allData/:category?',
-        element: <Home />, // Home component includes Banner and AllData
+        element: <Home />, 
       },
+      {
+        path: '/support',
+        element:<SupportPage></SupportPage>
+      }
     ],
   },
 ]);

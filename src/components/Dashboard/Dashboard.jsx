@@ -19,6 +19,7 @@ const Dashboard = () => {
     <div>
       <Helmet>
         <title>Dashboard - Gadget Heaven</title>
+        <link rel="shortcut icon" href="/dashboard.png" type="image/x-icon" />
       </Helmet>
       {/* Banner */}
       <div className="bg-customPurple h-max rounded-xl pb-10 pt-5">
