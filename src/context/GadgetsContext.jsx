@@ -23,9 +23,21 @@ export const GadgetsProvider = ({ children }) => {
   };
 
   // Remove item from cart by product ID
-  const removeFromCart = (productId) => {
-    setCart((prevCart) => prevCart.filter(item => item.product_id !== productId));
-  };
+ // Remove one item from the cart by product ID (based on index of the clicked item)
+const removeFromCart = (productId) => {
+  setCart((prevCart) => {
+    const productIndex = prevCart.findIndex(item => item.product_id === productId);
+    if (productIndex !== -1) {
+      // Remove only the product that matches the clicked ID
+      return [
+        ...prevCart.slice(0, productIndex),
+        ...prevCart.slice(productIndex + 1),
+      ];
+    }
+    return prevCart;
+  });
+};
+
 
   // Add item to wishlist
   const addToWishlist = (product) => {

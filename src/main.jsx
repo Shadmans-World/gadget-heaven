@@ -1,11 +1,10 @@
+// main.jsx
 import { StrictMode } from 'react';
 import { createRoot } from 'react-dom/client';
 import { GadgetsProvider } from './context/GadgetsContext';
 import './index.css';
-import {
-  createBrowserRouter,
-  RouterProvider,
-} from "react-router-dom";
+import { createBrowserRouter, RouterProvider } from 'react-router-dom';
+import { Helmet } from 'react-helmet';
 
 // Importing Components
 import Home from './components/Home/Home';
@@ -17,8 +16,7 @@ import Statistics from './components/Statistics/Statistics';
 import CartPage from './components/CartPage/CartPage';
 import WishlistPage from './components/WishlistPage/WishlistPage';
 
-
-// Configuring routes, including nested routes for categories within Home
+// Configuring routes
 const router = createBrowserRouter([
   {
     path: '/',
@@ -49,11 +47,10 @@ const router = createBrowserRouter([
         path: '/wishlist',
         element: <WishlistPage />,
       },
-      
       {
         path: '/allData/:category?',
         element: <Home />, // Home component includes Banner and AllData
-      }
+      },
     ],
   },
 ]);
@@ -62,6 +59,11 @@ const router = createBrowserRouter([
 createRoot(document.getElementById('root')).render(
   <StrictMode>
     <GadgetsProvider>
+      {/* Set global title and meta tags */}
+      <Helmet>
+        <title>Gadget Heaven</title>
+        <meta name="description" content="Explore the latest gadgets at My Gadgets Store!" />
+      </Helmet>
       <RouterProvider router={router} />
     </GadgetsProvider>
   </StrictMode>

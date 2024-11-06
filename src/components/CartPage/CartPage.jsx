@@ -3,6 +3,7 @@ import { FaSlidersH } from "react-icons/fa";
 import { GadgetsContext } from "../../context/GadgetsContext";
 import { TiDelete } from "react-icons/ti";
 import { useNavigate } from "react-router-dom";
+import { Helmet } from "react-helmet";
 
 const CartPage = () => {
   const { cart, removeFromCart, clearCart } = useContext(GadgetsContext);
@@ -33,6 +34,7 @@ const CartPage = () => {
 
   return (
     <div>
+      {/* <Helmet><title>Cart - Gadget Heaven</title></Helmet> */}
       <div className="flex justify-between items-center px-5 mt-5">
         <div>
           <h5 className="text-2xl font-bold">Cart</h5>

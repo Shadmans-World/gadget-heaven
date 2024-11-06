@@ -2,6 +2,7 @@ import React, { useContext, useState } from "react";
 
 import CartPage from "../CartPage/CartPage";
 import WishlistPage from "../WishlistPage/WishlistPage";
+import { Helmet } from "react-helmet";
 
 const Dashboard = () => {
   
@@ -16,6 +17,9 @@ const Dashboard = () => {
 
   return (
     <div>
+      <Helmet>
+        <title>Dashboard - Gadget Heaven</title>
+      </Helmet>
       {/* Banner */}
       <div className="bg-customPurple h-max rounded-xl pb-10 pt-5">
         <div className="flex w-[70%] mx-auto flex-col gap-y-5 justify-center text-center text-white">
