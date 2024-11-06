@@ -2,16 +2,21 @@ import React, { useContext } from "react";
 import { GadgetsContext } from "../../context/GadgetsContext";
 import { LuShoppingCart } from "react-icons/lu";
 import { TiDelete } from "react-icons/ti"; // Import TiDelete icon
+import { toast, ToastContainer } from "react-toastify";
+import { Helmet } from "react-helmet";
 
 const WishlistPage = () => {
   const { wishlist, addToCart, removeFromWishlist } = useContext(GadgetsContext);
   const handleAddToCart = (product) => {
     addToCart(product); // Add to cart
+    toast.success('Product has been added to the cart')
     removeFromWishlist(product.product_id); // Remove from wishlist
+    
   };
 
   return (
     <div className="mt-5">
+      <Helmet><link rel="shortcut icon" href="/dashboard.png" type="image/x-icon" /></Helmet>
       <div className="px-5 mt-5 ">
         <h2 className="text-2xl font-bold">Wishlist</h2>
       </div>
@@ -41,6 +46,7 @@ const WishlistPage = () => {
           ))
         )}
       </div>
+      <ToastContainer/>
     </div>
   );
 };

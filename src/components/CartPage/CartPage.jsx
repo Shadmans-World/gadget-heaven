@@ -34,7 +34,7 @@ const CartPage = () => {
 
   return (
     <div>
-      {/* <Helmet><title>Cart - Gadget Heaven</title></Helmet> */}
+      <Helmet><link rel="shortcut icon" href="/dashboard.png" type="image/x-icon" /></Helmet>
       <div className="flex justify-between items-center px-5 mt-5">
         <div>
           <h5 className="text-2xl font-bold">Cart</h5>

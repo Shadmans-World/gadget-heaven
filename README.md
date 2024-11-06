@@ -1,8 +1,26 @@
-# React + Vite
+# Gadget Heaven - React E-Commerce
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Live Website Link: [Gadget Heaven](https://gadget-heaven-bd.netlify.app/)
 
-Currently, two official plugins are available:
+## Requirement Document Link:
+[Requirement Document](requirment.md)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## React Fundamentals Used:
+- React Components
+- Props and State
+- React Hooks (`useState`, `useContext`)
+- Conditional Rendering
+- Event Handling
+- useEffect (for side effects)
+- React Router for navigation
+
+## Data Management:
+- Used Context API for state management across components (no local storage).
+
+## Key Features:
+1. **Product Display** - Showcasing gadgets in various categories.
+2. **Wishlist** - Add products to the wishlist with a toast notification.
+3. **Cart Functionality** - Add/remove items from the cart and toggle sorting by price.
+4. **Product Details Page** - Individual product view with options to add to cart and wishlist.
+5. **Dynamic Page Navigation** - Switch between Cart and Wishlist without changing the URL path.
+

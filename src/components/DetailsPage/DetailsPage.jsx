@@ -40,12 +40,11 @@ const DetailsPage = () => {
   };
 
   return (
-    <div className="relative bg-customPurple h-[300px] rounded-b-xl mb-[35rem]">
-      <div className="flex w-[70%] mx-auto flex-col gap-y-5 justify-center text-center text-white">
+    <div className="relative bg-customPurple h-[300px] rounded-xl mb-[35rem]">
+      <div className="flex w-[70%] mx-auto flex-col pt-5 gap-y-5 justify-center text-center text-white">
         <h3 className="text-[32px] font-bold">Product Details</h3>
         <p>
-          Explore the latest gadgets that will take your experience to the next
-          level. From smart devices to the coolest accessories, we have it all!
+        The Page displays product information, including title, price, description, <br /> specifications, rating, and options to add to cart or wishlist.
         </p>
       </div>
       <div className="absolute w-[70%] h-max border p-3 top-[60%] left-1/2 -translate-x-1/2 rounded-xl bg-white">

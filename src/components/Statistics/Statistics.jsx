@@ -28,7 +28,7 @@ const Statistics = () => {
         <Helmet>
         <title>Statistics - Gadget Heaven</title>
         <meta name="description" content="Welcome to the best gadgets store with the latest products!" />
-        <link rel="icon" href="/analysis.png" type="image/png"></link>
+        <link rel="shortcut icon" href="/analysis.png" type="image/x-icon" />
       </Helmet>
       <div className="bg-customPurple h-max rounded-xl pb-10 pt-5 text-white">
       <h3 className="text-[32px] font-bold text-center mb-4">
