@@ -2,6 +2,7 @@ import React, { useContext, useState } from "react";
 import { FaSlidersH } from "react-icons/fa";
 import { GadgetsContext } from "../../context/GadgetsContext";
 import { TiDelete } from "react-icons/ti";
+import { useNavigate } from "react-router-dom";
 
 const CartPage = () => {
   const { cart, removeFromCart, clearCart } = useContext(GadgetsContext);
@@ -16,10 +17,11 @@ const CartPage = () => {
   const handlePurchase = () => {
     setIsModalOpen(true);
   };
-
+  const navigate = useNavigate();
   const closeModal = () => {
     setIsModalOpen(false);
     clearCart(); // Clear cart after closing modal
+    navigate('/');
   };
 
   // Sort cart items in descending order when the button is clicked

@@ -12,6 +12,10 @@ import Root from './components/Root/Root';
 
 import DetailsPage from './components/DetailsPage/DetailsPage';
 import Dashboard from './components/Dashboard/Dashboard';
+import Statistics from './components/Statistics/Statistics';
+import CartPage from './components/CartPage/CartPage';
+import WishlistPage from './components/WishlistPage/WishlistPage';
+import ContactUs from './components/ContactUs.jsx/ContactUs';
 
 const router = createBrowserRouter([
   {
@@ -30,6 +34,22 @@ const router = createBrowserRouter([
       {
         path:'/dashboard',
         element:<Dashboard></Dashboard>
+      },
+      {
+        path:'/statistics',
+        element:<Statistics></Statistics>
+      },
+      {
+        path:'/cart',
+        element:<CartPage></CartPage>
+      },
+      {
+        path:'/wishlist',
+        element: <WishlistPage></WishlistPage>
+      },
+      {
+        path:'/contactus',
+        element:<ContactUs></ContactUs>
       }
     ]
   }

@@ -17,7 +17,7 @@ const Dashboard = () => {
   return (
     <div>
       {/* Banner */}
-      <div className="bg-customPurple h-max rounded-b-xl pb-10">
+      <div className="bg-customPurple h-max rounded-xl pb-10 pt-5">
         <div className="flex w-[70%] mx-auto flex-col gap-y-5 justify-center text-center text-white">
           <h3 className="text-[32px] font-bold">Dashboard</h3>
           <p>
